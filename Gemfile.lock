@@ -1,0 +1,55 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (6.0.3.3)
+      activesupport (= 6.0.3.3)
+    activerecord (6.0.3.3)
+      activemodel (= 6.0.3.3)
+      activesupport (= 6.0.3.3)
+    activerecord-jdbc-adapter (60.2-java)
+      activerecord (~> 6.0.0)
+    activerecord-jdbcmysql-adapter (60.2-java)
+      activerecord-jdbc-adapter (= 60.2)
+      jdbc-mysql (~> 5.1.36, < 9)
+    activerecord-jdbcpostgresql-adapter (60.2-java)
+      activerecord-jdbc-adapter (= 60.2)
+      jdbc-postgres (>= 9.4, < 43)
+    activesupport (6.0.3.3)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+      zeitwerk (~> 2.2, >= 2.2.2)
+    concurrent-ruby (1.1.7)
+    couchrest (2.0.1)
+      httpclient (~> 2.8)
+      mime-types (>= 1.15)
+      multi_json (~> 1.7)
+    httpclient (2.8.3)
+    i18n (1.8.5)
+      concurrent-ruby (~> 1.0)
+    jdbc-mysql (5.1.47)
+    jdbc-postgres (42.2.14)
+    mime-types (3.3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2020.0512)
+    minitest (5.14.2)
+    multi_json (1.15.0)
+    redis (4.2.2)
+    thread_safe (0.3.6-java)
+    tzinfo (1.2.7)
+      thread_safe (~> 0.1)
+    zeitwerk (2.4.0)
+
+PLATFORMS
+  java
+
+DEPENDENCIES
+  activerecord
+  activerecord-jdbcmysql-adapter
+  activerecord-jdbcpostgresql-adapter
+  couchrest
+  redis
+
+BUNDLED WITH
+   2.1.4
